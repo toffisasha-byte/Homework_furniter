@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.menu-head {
+    display: flex;
+    gap: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.hero {
+    background-image: url(./images/main.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: flex-start;
+    position: relative; 
+    padding-top: 80px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 50px;
+    padding: 0 20px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: left;
+}
+
+.container h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.container a {
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+}
+
+.products {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0;
+}
+
+.cards {
+    display: contents;
+}
+
+.card {
+    margin: 0;
+}
+
+.card h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card h3 {
+    font-weight: 200;
+    font-size: 14px;
+    color: gray;
+}
+
+.title {
+    display: flex;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.footer {
+    background-color: #f7f6f5;
+    width: 100%;
+    padding: 40px 20px;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
